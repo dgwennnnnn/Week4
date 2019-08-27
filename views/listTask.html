@@ -1,0 +1,27 @@
+<html>
+        <head><link rel="stylesheet" href="static.css"></head>
+<body>
+    <a href="/">Home</a>
+    <a href="/newTask">Add New Task</a>
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>Due Date</td>
+            <td>Description</td>
+        </tr>
+        <% for(let i=0;i<Data.length;i++){ %>
+            <tr>
+                <td>
+                    <%=Data[i].TaskName %>
+                </td>
+                <td>
+                    <%=Data[i].DueDate %>
+                </td>
+                <td>
+                    <%=Data[i].Description %>
+                </td>
+            </tr>
+
+        <%} %>
+</body>
+</html>
